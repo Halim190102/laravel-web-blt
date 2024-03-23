@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    background: #dfe9f5;
+   
+}
+
+
+/* navbar */
+
+nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left:0;
+    background: #fff;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px ;
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+}
+
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+   font-size: 18px;
+   text-transform: uppercase;
+}
+
+a{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+.fa{
+    position: relative;
+    width: 70px;
+    height: 40px ;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+
+
+a:hover{
+    background: #eee;
+}
+
+nav:hover{
+width: 290px;
+transition: all 0.5 ease;
+}
+
+.log-out{
+    position: absolute;
+    bottom: 50px;
+    
+}
+
+/* End Nabar */
+
+/* table */
+.container{
+    margin-left: 100px;
+    margin-top: 30px;
+    /* ukuran card putih */
+    max-width:1810px;
+    /* Ukuran card putih */
+    width: 100%;
+    background: #fff;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+}
+
+.container h2 {
+    padding: 2rem 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.tbl {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tbl thead{
+    background:#40E0D0 ;
+    color: #000;
+    
+
+}
+
+.tbl thead tr th {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    letter-spacing: 0.1rem;
+    vertical-align: top;
+    border: 1px solid #aab7b8;
+
+}
+
+.tbl tbody tr td{
+    font-size: 0.9rem;
+    /* letter-spacing: 0.1rem; */
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid #aab7b8;
+    padding: 0.8rem;
+     
+}
+.tbl tr:nth-child(even) {
+    background: #ccc;
+}
+
+.tbl tr:hover td {
+    background: #839192;
+    color: #000;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.tbl button {
+    display: inline-block;
+    border: none;
+    margin :auto;
+    padding: 0.2rem;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn_trash{
+    background-color: #FF0000;
+    color: #000;
+    
+}
+
+.btn_edit{
+    background:#008000 ;
+    color: #000;
+}
+
+
+/* login */
+
+.tambah, .btn-login {
+    background: transparent;
+}
+
+.btn-regis {
+    background-color: #1cc88a;
+}
+
+.row-btn-login {
+    margin-top: 120px;
+}
+
+.radius {
+    font-size: 20px;
+    border-radius: 10rem;
+}
+.radius-index {
+    font-size: 15px;
+    border-radius: 10rem;
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.cari {
+    margin-left: 50px;
+    width: 650px;
+}
+
+.ubah {
+    background-color: #f6c23e;
+}
+.panel {
+    background-image: url('../assets/img/loreng.png');
+    height: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+
+img {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); 
+}
+
+
+
+
+.full-screen{
+  width: 100%;
+  height: 100vh;
+  display: inherit;
+  overflow: scroll ;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+
+}
+
+.full-screen video{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
